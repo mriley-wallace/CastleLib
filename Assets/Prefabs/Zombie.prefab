@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b0c94e50a31c54285d0a7231407f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
+  health: 5
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -187,7 +187,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 809518199162265139}
+      - m_Target: {fileID: 809518199162265148}
         m_MethodName: SetTarget
         m_Mode: 0
         m_Arguments:

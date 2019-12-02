@@ -1308,6 +1308,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 809518199162265148, guid: 70566ef3827230448b4dd336181874ce,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1636120139}
+    - target: {fileID: 809518199162265139, guid: 70566ef3827230448b4dd336181874ce,
+        type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1636120139}
     - target: {fileID: 809518199162265142, guid: 70566ef3827230448b4dd336181874ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1408,16 +1418,6 @@ PrefabInstance:
       propertyPath: onSpawn.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
-    - target: {fileID: 809518199162265139, guid: 70566ef3827230448b4dd336181874ce,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1636120139}
-    - target: {fileID: 809518199162265148, guid: 70566ef3827230448b4dd336181874ce,
-        type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 1636120139}
     - target: {fileID: 809518199162265137, guid: 70566ef3827230448b4dd336181874ce,
         type: 3}
       propertyPath: health
@@ -1442,6 +1442,15 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3575213732142500610, guid: 70566ef3827230448b4dd336181874ce,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 767335761, guid: 70566ef3827230448b4dd336181874ce, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70566ef3827230448b4dd336181874ce, type: 3}

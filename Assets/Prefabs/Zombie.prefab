@@ -23,7 +23,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &809518199162265142
 Transform:
@@ -32,7 +32,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809518199162265150}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.12, y: 2.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27b0c94e50a31c54285d0a7231407f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 2
   onDie:
     m_PersistentCalls:
       m_Calls:
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabToSpawn: {fileID: 3342816135069212876, guid: 0ef0b513a6e14fd42bb248e7accdd775,
     type: 3}
-  adjustmentAngle: 0
+  adjustmentAngle: 270
 --- !u!114 &-4306757438223265559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +280,8 @@ GameObject:
   - component: {fileID: 3008247510582652530}
   - component: {fileID: 3575213732142500610}
   - component: {fileID: 3575213732142500609}
+  - component: {fileID: 767335761}
+  - component: {fileID: 767335762}
   m_Layer: 11
   m_Name: HurtTrigger
   m_TagString: Untagged
@@ -318,6 +320,36 @@ CircleCollider2D:
   serializedVersion: 2
   m_Radius: 1.07
 --- !u!114 &3575213732142500609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984511414601559173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45be04f96592194f985cf8234cb3ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  resetTime: 0.25
+--- !u!58 &767335761
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984511414601559173}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.59}
+  serializedVersion: 2
+  m_Radius: 1.07
+--- !u!114 &767335762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

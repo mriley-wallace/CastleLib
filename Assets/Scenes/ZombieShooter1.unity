@@ -867,7 +867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1577294751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,6 +946,7 @@ GameObject:
   - component: {fileID: 1636120144}
   - component: {fileID: 1636120145}
   - component: {fileID: 1636120146}
+  - component: {fileID: 1636120147}
   m_Layer: 10
   m_Name: Hero
   m_TagString: Player
@@ -1091,7 +1092,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636120135}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5cc5b3b8c5381024dac891ef996dc09c, type: 3}
   m_Name: 
@@ -1181,6 +1182,25 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: OnDamagedEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+--- !u!114 &1636120147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636120135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23241500203e9e94ea2d6e5e6a842ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrowPrefab: {fileID: 7398594879477999391, guid: af7a3c506489ad8468bf599b7fe25429,
+    type: 3}
+  arrowSpawn: {fileID: 800429652}
+  fireTime: 0.9
+  drawBack: 0
+  drawBackLimit: 10
+  drawBackSpeed: 5
 --- !u!1 &2033937950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1301,7 +1321,7 @@ PrefabInstance:
     - target: {fileID: 809518199162265150, guid: 70566ef3827230448b4dd336181874ce,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 809518199162265150, guid: 70566ef3827230448b4dd336181874ce,
         type: 3}

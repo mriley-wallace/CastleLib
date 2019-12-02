@@ -13,4 +13,4 @@ public class HurtTrigger : MonoBehaviour
     {
         GetComponent<Collider2D>().enabled = true;
     }
-}
+}

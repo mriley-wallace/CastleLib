@@ -3,7 +3,7 @@ using System.Collections;
 public class TopDownCharacterController2D : MonoBehaviour
 {
     public float speed = 5.0f;
-    Rigidbody2D rigidbody2D;
+    new Rigidbody2D rigidbody2D;
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();

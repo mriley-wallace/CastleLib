@@ -5,8 +5,8 @@ using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
-public class OnDamagedEvent : UnityEvent<int> { }
-public class HealthSystem : MonoBehaviour
+public class OnDamagedEventPlayer : UnityEvent<int> { }
+public class HealthSystemPlayer : MonoBehaviour
 {
     public int health = 10;
     public UnityEvent onDie;
@@ -18,7 +18,7 @@ public class HealthSystem : MonoBehaviour
         if (health < 1)
         {
             onDie.Invoke();
-            
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

@@ -5150,7 +5150,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1448403045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5532,7 +5532,6 @@ GameObject:
   - component: {fileID: 1636120136}
   - component: {fileID: 1636120141}
   - component: {fileID: 1636120140}
-  - component: {fileID: 1636120142}
   - component: {fileID: 1636120143}
   - component: {fileID: 1636120144}
   - component: {fileID: 1636120145}
@@ -5675,22 +5674,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
---- !u!114 &1636120142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1636120135}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc5b3b8c5381024dac891ef996dc09c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7398594879477999391, guid: af7a3c506489ad8468bf599b7fe25429,
-    type: 3}
-  bulletSpawn: {fileID: 0}
-  fireTime: 0.5
 --- !u!114 &1636120143
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ Tilemap:
   m_Enabled: 1
   m_Tiles:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - first: {x: 1, y: -7, z: 0}
     second:
       m_TileIndex: 65
@@ -51,6 +52,8 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 3
       m_ColliderType: 1
+=======
+>>>>>>> parent of a77da4c... Update 0.9.1
 =======
 >>>>>>> parent of a77da4c... Update 0.9.1
   - first: {x: -1, y: -6, z: 0}
@@ -807,10 +810,13 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 08670b3921f184b4e8f9f503779206f7, type: 2}
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 1
     m_Data: {fileID: 0}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 30f4c95671065b94fa51300bbdaa58ac, type: 2}
+=======
+>>>>>>> parent of a77da4c... Update 0.9.1
 =======
 >>>>>>> parent of a77da4c... Update 0.9.1
   m_TileSpriteArray:
@@ -995,7 +1001,11 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: c966dd8d001831c42a0b1908a299dea8, type: 3}
   m_TileMatrixArray:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 70
+=======
+  - m_RefCount: 68
+>>>>>>> parent of a77da4c... Update 0.9.1
 =======
   - m_RefCount: 68
 >>>>>>> parent of a77da4c... Update 0.9.1
@@ -1018,7 +1028,11 @@ Tilemap:
       e33: 1
   m_TileColorArray:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_RefCount: 56
+=======
+  - m_RefCount: 68
+>>>>>>> parent of a77da4c... Update 0.9.1
 =======
   - m_RefCount: 68
 >>>>>>> parent of a77da4c... Update 0.9.1

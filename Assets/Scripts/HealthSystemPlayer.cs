@@ -20,5 +20,10 @@ public class HealthSystemPlayer : MonoBehaviour
             onDie.Invoke();
             SceneManager.LoadScene("GameOver");
         }
+
+        if (health > 100)
+        {
+            health = 100;
+        }
     }
 }

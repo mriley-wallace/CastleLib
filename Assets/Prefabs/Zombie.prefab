@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 809518199162265142}
   - component: {fileID: 809518199162265143}
-  - component: {fileID: 809518199162265136}
   - component: {fileID: -4486045271051212485}
   - component: {fileID: 809518199162265137}
   - component: {fileID: 809518199162265138}
@@ -19,6 +18,8 @@ GameObject:
   - component: {fileID: 809518199162265149}
   - component: {fileID: -4306757438223265559}
   - component: {fileID: 613706682715574192}
+  - component: {fileID: 2585105832102029029}
+  - component: {fileID: 3672383363111372942}
   m_Layer: 9
   m_Name: Zombie
   m_TagString: Untagged
@@ -38,6 +39,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3008247510582652530}
+  - {fileID: 8585010264078526104}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -90,22 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &809518199162265136
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809518199162265150}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.01}
-  serializedVersion: 2
-  m_Radius: 0.27
 --- !u!50 &-4486045271051212485
 Rigidbody2D:
   serializedVersion: 4
@@ -165,8 +151,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -4306757438223265559}
-        m_MethodName: Die
+      - m_Target: {fileID: 3672383363111372942}
+        m_MethodName: Spawn
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -235,7 +221,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 1
+  speed: 4
 --- !u!114 &809518199162265148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +277,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb4b3284ebc182c418dfcb2ecf9540cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &2585105832102029029
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809518199162265150}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.19
+--- !u!114 &3672383363111372942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809518199162265150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dde9449e53505b447a8fb6b115d6cdcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health10: {fileID: 8062672859617092379, guid: 184af9ae809c858448fba89a593900a8,
+    type: 3}
+  health15: {fileID: 5570067633619152869, guid: 46928c6fa9c095e40b10329270ecbb9d,
+    type: 3}
+  health20: {fileID: 2926616409431946133, guid: 4e95865c919ac9844974571342cdd818,
+    type: 3}
+  health30: {fileID: 7256741738726317991, guid: ee4d6acc06fb5ba4dbf46cf8c3e6dab4,
+    type: 3}
+  health50: {fileID: 2259478768828769630, guid: 1485bcac923f4d340b36441e5f7c8f60,
+    type: 3}
 --- !u!1 &984511414601559173
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,7 +329,6 @@ GameObject:
   - component: {fileID: 767335761}
   - component: {fileID: 767335762}
   - component: {fileID: 4947207385744286327}
-  - component: {fileID: 4650310069099790248}
   m_Layer: 11
   m_Name: HurtTrigger
   m_TagString: Untagged
@@ -402,18 +425,34 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.59}
   serializedVersion: 2
-  m_Radius: 1.07
---- !u!114 &4650310069099790248
-MonoBehaviour:
+  m_Radius: 0.24
+--- !u!1 &1360089473979571522
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 984511414601559173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b45be04f96592194f985cf8234cb3ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  resetTime: 0.25
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8585010264078526104}
+  m_Layer: 0
+  m_Name: itemToDrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8585010264078526104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360089473979571522}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.08988142, y: -0.35272014, z: -0.54069674}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 809518199162265142}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
